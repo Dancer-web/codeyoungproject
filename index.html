@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4a/Color_changing_gradient_rainbow.gif);
+        }
+        .parent{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        nav{
+            display:flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        footer{
+            text-align: center;
+        }
+        .bs{
+            height: 300px;
+            
+        }
+        .gkques{
+            display: none;
+        }
+        .mathques{
+            display: none;
+        }
+        .sciques{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">General Knowledge</a>
+        <a href="#">Mathematics</a>
+        <a href="#">Science</a>
+        <a href="#">Question Bank</a>
+    </nav>
+    <div class="bs">
+        
+    </div>
+    <div class="parent">
+        <div class="d1">
+            <img src="https://media.baamboozle.com/uploads/images/18897/1592633292_279983" width="200px" height="150px">
+            <p>readier for competive exams.  GK questions test the candidate's  analytical and problem-solving abilties.It helps to develop reasoning and logical skills.</p>
+            <button onclick="gkQues()">Start GK Quiz</button>
+        </div>
+        <div class="d2">
+            <img src="https://content.tinytap.it/Math-Quiz_B4B52D1C-1811-43B2-9B88-D9B78ADBA9ED/coverImage.png?ver=0" width="200px" height="150px">
+            <p>competition was to encourge  students to look beyond their textual knowledge and establish a relationship between theory and application of the learnt concepts.</p>
+            <button onclick="mathQues()">Start Math Quiz </button>
+        </div>
+        <div class="d3">
+            <img src="https://abaqschool.com/wp-content/uploads/2021/03/main-768x579.png" width="200px" height="150px">
+            <p>and interesting way. These questions add knowledge to their brains and add depth to their understanding
+            of the topics studied in school.</p>
+            <button onclick="sciQues()">Start Science Quiz </button>
+        </div>
+    </div> 
+    <div class="gkques">
+        1. What is the shortest month of the year?  <br><br> <button onclick="wrongans()">July</button> <button onclick="correctans()">Feburary</button><br><br>
+        2. What language contains the most words?
+        <br><br><button onclick="wrongans()">Spanish</button> <button onclick="correctans()">English</button><br><br>
+        3. What is a baby kangaroo called?
+        <br><br> <button onclick="correctans()">Joey</button> <button onclick="wrongans()">Cub</button><br><br>
+        4. What is the orange part of a egg called?
+        <br> <br><button onclick="wrongans()">Shell</button> <button onclick="correctans()">Yolk</button><br><br>
+        5. What is the tallest mountain called?
+        <br><br> <button onclick="wrongans()">K2</button> <button onclick="correctans()">Mount Everest</button><br><br>
+        6. What are the one of the five colours of the Olympic rings?
+        <br><br> <button onclick="correctans()">Red</button> <button onclick="wrongans()">Purple</button><br><br>
+        7. What is the world's smallest continent?
+        <br><br> <button onclick="correctans()">Australia</button> <button onclick="wrongans()">Europe</button><br><br>
+        8. Who was the first man to the moon?
+        <br> <br><button onclick="correctans()">Neil Armstrong</button> <button onclick="wrongans()">Buzz Aldrin</button><br><br>
+        9. What is the national animal of India?
+        <br> <br><button onclick="wrongans()">Lion</button> <button onclick="correctans()">Peacock</button><br><br>
+        10. What catagory is the colors Red, Blue, and Yellow?
+        <br><br> <button onclick="correctans()">Primary</button> <button onclick="wrongans()">Secondary</button><br><br>
+    </div> 
+    <div class="mathques">
+        1. What symbol is used to symbolize percentage?  <br><br> <button onclick="wrongans()">*</button> <button onclick="correctans()">%</button><br><br>
+        2. What is the answer of 18-9?
+        <br><br><button onclick="wrongans()">21</button> <button onclick="correctans()">9</button><br><br>
+        3. How many degrees is in a right angle?
+        <br><br> <button onclick="correctans()">90</button> <button onclick="wrongans()">180</button><br><br>
+        4. What is the square root of 4?
+        <br> <br><button onclick="wrongans()">4</button> <button onclick="correctans()">2</button><br><br>
+        5. What is the mode in the set of data - 2,5,7,8,8,2,5,5?
+        <br><br> <button onclick="wrongans()">2</button> <button onclick="correctans()">5</button><br><br>
+        6. How many faces does a cube have?
+        <br><br> <button onclick="correctans()">6</button> <button onclick="wrongans()">8</button><br><br>
+        7. What is the answer 31*7?
+        <br><br> <button onclick="correctans()">217</button> <button onclick="wrongans()">112</button><br><br>
+        8. Four cubed can also be written as 4 <sup>3</sup>.
+        <br> <br><button onclick="correctans()">True</button> <button onclick="wrongans()">False</button><br><br>
+        9. What is Pi to five decimal places?
+        <br> <br><button onclick="wrongans()">3.15189</button> <button onclick="correctans()">3.14159</button><br><br>
+        10. How many sides does a penatgon have?
+        <br><br> <button onclick="correctans()">5</button> <button onclick="wrongans()">6</button><br><br>
+    </div> 
+    <div class="sciques">
+        1. What does DNA stand for?  <br><br> <button onclick="wrongans()">Deox Ni Acid</button> <button onclick="correctans()">Deoxyribonucleic acid</button><br><br>
+        2. What is the biggest planet in the solar system?
+        <br><br><button onclick="wrongans()">Neptune</button> <button onclick="correctans()">Jupiter</button><br><br>
+        3.What is the fastest land animal in the world?
+        <br><br> <button onclick="correctans()">Cheetah</button> <button onclick="wrongans()">Lion</button><br><br>
+        4. True or false? Iron is attracted by magnets.
+        <br> <br><button onclick="wrongans()">False</button> <button onclick="correctans()">True</button><br><br>
+        5. Which galaxy is Earth in?
+        <br><br> <button onclick="wrongans()">Black Eye</button> <button onclick="correctans()">Milky Way</button><br><br>
+        6. What is the second smallest planet in the universe?
+        <br><br> <button onclick="correctans()">Mars</button> <button onclick="wrongans()">Mercury</button><br><br>
+        7. Which planet is named after the Roman goddess of beauty and love?
+        <br><br> <button onclick="correctans()">Venus</button> <button onclick="wrongans()">Mercury</button><br><br>
+        8. What gas do humans exhale?
+        <br> <br><button onclick="correctans()">Carbon Dioxide</button> <button onclick="wrongans()">Air</button><br><br>
+        9. What kind of energy do we get from the sun?
+        <br> <br><button onclick="wrongans()">Vitamin D</button> <button onclick="correctans()">Solar Energy</button><br><br>
+        10. How many teeth does an adult human have?
+        <br><br> <button onclick="correctans()">32</button> <button onclick="wrongans()">36</button><br><br>
+        </div>
+    <footer>
+        <div class="d4">
+            <p>Follow us on <br><i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-facebook"></i> <i
+                    class="fa-brands fa-twitter"></i> <i class="fa-brands fa-tiktok"></i> <br>
+                Created by Marry Netal <br> copyright by Tech Learner pvt limited
+            </p>
+        </div>
+    </footer>
+    <script>
+        function gkQues(){
+            document.querySelector(".d2").style.display = "none";
+            document.querySelector(".d1").style.display = "none";
+            document.querySelector(".d3").style.display = "none";
+            document.querySelector(".d4").style.display="block";
+            document.querySelector(".gkques").style.display="block";
+            document.querySelector(".gkques").style.textAlign="center"
+        }
+        function wrongans(){
+            alert("Wrong Answer")
+        }
+        function correctans(){
+            alert("Correct Answer")
+        }
+        </script>
+        <script>
+        function mathQues(){
+            document.querySelector(".d2").style.display = "none";
+            document.querySelector(".d1").style.display = "none";
+            document.querySelector(".d3").style.display = "none";
+            document.querySelector(".d4").style.display="block";
+            document.querySelector(".mathques").style.display="block";
+            document.querySelector(".mathques").style.textAlign="center"
+        }
+        function wrongans(){
+            alert("Wrong Answer")
+        }
+        function correctans(){
+            alert("Correct Answer")
+        }
+    </script>
+    <script>
+        function sciQues(){
+            document.querySelector(".d2").style.display = "none";
+            document.querySelector(".d1").style.display = "none";
+            document.querySelector(".d3").style.display = "none";
+            document.querySelector(".d4").style.display="block";
+            document.querySelector(".sciques").style.display="block";
+            document.querySelector(".sciques").style.textAlign="center"
+        }
+        function wrongans(){
+            alert("Wrong Answer")
+        }
+        function correctans(){
+            alert("Correct Answer")
+        }
+    </script>
+</body>
+</html>
